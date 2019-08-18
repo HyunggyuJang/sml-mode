@@ -1589,7 +1589,7 @@ completion from `sml-forms-alist'."
   (interactive
    (list (completing-read
 	  (format "Form to insert (default %s): " sml-last-form)
-	  sml-forms-alist nil t nil nil sml-forms-alist)
+	  sml-forms-alist nil t nil nil sml-last-form sml-forms-alist)
 	 current-prefix-arg))
   (setq sml-last-form name)
   (unless (or (not newline)
